@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* The div that wraps your counter (direct child of #root) */
+#root > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-width: 320px;
+}
+
+/* Number display: takes the full first row */
+h1 {
+  width: 100%;
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 4rem;
+  color: #1e293b;
+}
+
+/* Shared button styles */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Colors by button position: increase, decrease, increaseby5 */
+button:nth-of-type(1) { background: #22c55e; }
+button:nth-of-type(1):hover { background: #16a34a; }
+
+button:nth-of-type(2) { background: #ef4444; }
+button:nth-of-type(2):hover { background: #dc2626; }
+
+button:nth-of-type(3) { background: #3b82f6; }
+button:nth-of-type(3):hover { background: #2563eb; }
